@@ -1,0 +1,160 @@
+body{
+	padding:0px; 
+	margin:1em;
+	font-family: 'Dancing Script';
+	background-color: black;
+}
+
+header {
+	background-color: #5b7989;
+	padding:20px; 
+	border-radius: 10px 10px 0px 0px;
+	animation-name: header-animacion;
+	animation-duration: 2s;
+}
+
+@keyframes 
+header-animacion {
+	0%{
+			position: relative;
+			margin-top: 150%;
+	}
+	60%{
+			position: relative;
+			margin-top: -5%;
+	}
+	100%{
+			position: relative;
+			margin-top: 0%;
+	}
+}
+
+#titulo h1{
+	color: white;
+	text-shadow: 2px 2px #02010a;
+	display: inline;
+	padding: 10px;
+	max-width: 50px;
+}
+#menu-principal {
+	padding: 20px;
+	margin-left: 50%;
+	max-width: 100%;
+}
+
+#menu-principal a { 
+display: inline-flex;
+flex-direction: unset; 
+color:white;
+}
+
+#menu-principal a:link{
+	text-decoration: none;
+	color: white;
+}
+
+img {
+	box-shadow: 2px 2px 5px #02010a;
+	max-width: 100%;
+}
+
+.contenedor { 
+	text-align: center;
+	padding:20px; 
+    background-color:  #82c3a6;
+	}
+
+
+.contenedor1{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding:10px; 
+	background-color: #d5c75f;
+	border: 1px;
+	text-align: center;
+	color: white;
+}
+
+#imagen2{
+padding: 20px;
+}
+
+#imagen2 img:hover{
+	transform: rotate(10deg);
+	box-shadow: 5px 5px 10px #82c3a6;
+	border: 2px;
+}
+
+#imagen3 img:hover{
+	transform: translate(20px, -5px);
+	box-shadow: 5px 5px 10px #82c3a6;
+	border: 2px;
+}
+
+#imagen3{
+padding: 20px;
+}
+
+.contenedor3{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: #C6d5c5;
+	text-align: justify-all;
+	}
+
+@media (min-width: 900px) {
+	.contenido0{
+		max-width: 90%;
+ 		margin-left: 3%
+	}
+
+}
+
+@media (max-width: 900px){
+.contenido0{
+	max-width: 100%;
+}
+#titulo{
+		max-width: 100%;
+		margin-left: 0px;
+		font-size: 100%;
+		text-align: center;
+	}
+#menu-principal a { 
+		font-size: 100%;
+		color:white;
+	}
+
+#menu-principal {
+		margin-left: 35%;
+		padding: 1px;
+}
+
+.contenedor { 
+	justify-content: center;
+
+	}
+
+.contenedor1{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.contenedor3{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-size: 1em;
+}
+
+#imagen2 img {
+	height: 200px;
+}
+
+#imagen3 img {
+	height: 200px;
+}
+
+}
